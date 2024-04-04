@@ -1,20 +1,19 @@
 {
-  "name": "@robertklep/qbittorrent",
-  "version": "1.0.1",
+  "name": "@zachjw34/qbittorrent",
+  "version": "1.0.0",
   "description": "qBittorrent API v2 client",
-  "author": "Robert Klep <robert@klep.name>",
+  "author": "Zachary Williams",
   "license": "MIT",
-  "repository" : "robertklep/qbittorrent",
-  "main": "./dist/client.js",
-  "types": "./dist/client.d.ts",
-  "files" : [ "dist/**/*" ],
+  "repository": "https://github.com/ZachJW34/qbittorrent",
+  "files": ["dist/**/*"],
   "scripts": {
-    "build" : "tsc"
+    "build": "bun build src/index.ts --target bun > dist/main.js && bunx typescript"
   },
-  "dependencies": {
-    "needle": "^3.0.0"
-  },
+  "main": "dist/main.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
-    "@types/needle": "^2.5.3"
+    "@types/bun": "^1.0.12",
+    "@types/node": "^20.12.4",
+    "typescript": "^5.4.4"
   }
 }

@@ -126,7 +126,7 @@ export class qBittorrentClient {
 
     const response = await fetch(url, {
       method: "POST",
-      body: formData,
+      body: data ? formData : null,
       headers: {
         cookie: `SID=${this.#SID}`,
       },

@@ -21,7 +21,7 @@ export type TorrentAddParameters = {
     dlLimit: number;
     ratioLimit: number;
     seedingTimeLimit: number;
-    autoTMM: number;
+    autoTMM: boolean;
     sequentialDownload: boolean;
     firstLastPiecePrio: boolean;
 };
